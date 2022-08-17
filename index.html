@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Manoranjan-Khuntia">
+    <title>1st Assignment</title>
+    <style>
+        body{
+            font-family: 'poppins' serif;
+        }
+        .header {
+            height: 35px;
+            background-color: rgb(255, 0, 0);
+        }
+        .logo {
+            background-color: white;
+            width:25px;
+            height:25px;
+            display: inline-block;
+            border-radius: 50%;
+            color:red;
+            text-align: center;
+            margin-left: 18px;
+            margin-top: 6px;
+            font-size: 22px;
+        }
+        .login-container{
+            float: right;
+        }
+        .login-container{
+            margin-right: 25px;
+            margin-top: 2px;
+        }
+        .login-container button{
+            padding: 5px 20px;
+            border-style: outset;
+            border-color: white;
+            background-color: red;
+            color: white;
+            font-size: 15px;
+        }
+        .pagination{
+            display: inline-block;
+            margin-left: 550px;
+            margin-top: 10px;
+        }
+        .pagination a{
+            color:gray;
+            float: left;
+            padding: 5px 15px;
+            text-decoration: none;
+            border: solid 1px gray;
+            border-radius: 20px;
+            margin: 5px;
+            background-color: gainsboro;           
+        }
+        .side-bar{
+            margin-left: 10%;
+            padding: 0% 2% 2% 2%;
+            width: 12%;
+            float: left;
+            box-shadow: 1px 3px 6px #00000029;
+        }
+        .main-bar{
+            margin-right: 10%;
+            width: 60%;
+            float: right;
+        }
+        .Breakfast{
+            display: inline-block;
+            width: 50px;
+        }
+        hr{
+            width: 100%;
+        }
+        .food_Item_1,.food_Item_2{
+            box-shadow: 1px 3px 6px #00000029;
+            margin-bottom: 5%;
+            /* display: inline; */
+            padding: 2rem;
+        }
+        .pre_text{
+            font-size: large;
+            font-size: medium;
+            font-weight: lighter;
+            padding-right: 10%; 
+            text-align: left;
+        }
+        img{
+            display: inline-block;
+            border-radius: 20%; 
+            height: 100px;
+            width: 100px;
+        }
+        .bakery{
+            /* margin-left: 20%; */
+            /* float: right; */
+            text-align: left;
+            display: block;
+            margin: 0;
+            width: 50%;
+            margin-right: 0%;
+            /* display: inline; */
+        }
+    </style>
+</head>
+<body>
+    <!-- Here stat header tag -->
+    <header>
+        <div class="header">
+            <div class="logo">e!</div>
+            <div class="login-container">
+                <button>Login</button>
+                <button>Create Account</button>
+            </div>
+        </div>    
+    <!-- Heading of the Restaurant -->
+
+        <h1>Breakfast Place in Mumbai</h1>
+</header>
+<!-- here end Header tag -->
+
+    <!-- main are start here -->
+<main>
+    <div class="main-area">
+        <!-- side bar start now -->
+        <div class="side-bar">
+        <h3>Filters</h3>
+            <div>
+                <h5>Select Location</h5>
+                <select name="Select_Location" id="Select_Location" placeholder="select">
+                    <option value="select">select</option>
+                    <option value="Navi Mumbai">Navi Mumbai</option>
+                    <option value="Andheri East">Andheri East</option>
+                    <option value="Andheri West">Andheri West</option>
+                    <option value="Bandra">Bandra</option>
+                    <option value="The St. Regis Mumbai">The St. Regis Mumbai</option>
+                    <option value="Marine Drive">Marine Drive</option>
+                </select>
+            </div>
+            <div>
+                <h5>Cuisine</h5>
+                <input type="checkbox" id="North Indian" name="Food" value="North Indian">
+                <label for="North Indian">North Indian</label><br>
+                <input type="checkbox" id="South indian" name="Food" value="South indian">
+                <label for="South indian">South indian</label><br>
+                <input type="checkbox" id="Chineese" name="Food" value="Chineese">
+                <label for="Chineese">Chineese</label><br>
+                <input type="checkbox" id="Fast Food" name="Food" value="Fast Food">
+                <label for="Fast Food">Fast Food</label><br>
+                <input type="checkbox" id="Street Food" name="Food" value="Street Food">
+                <label for="Street Food">Street Food</label>
+            </div>
+            <div>
+                <h5>Cost For Two</h5>
+                <input type="radio" name="Cost" id="less than ₹ 500" value="less than ₹ 500">
+                <label for="less than ₹ 500">less than ₹ 500</label><br>
+                <input type="radio" name="Cost" id="₹ 500 to ₹ 1000" value="₹ 500 to ₹ 1000">
+                <label for="₹ 500 to ₹ 1000">₹500 to ₹ 1000</label><br>
+                <input type="radio" name="Cost" id="₹ 1000 to ₹ 1500" value="₹ 1000 to ₹ 1500">
+                <label for="₹ 1000 to ₹ 1500">₹ 1000 to ₹ 1500</label><br>
+                <input type="radio" name="Cost" id="₹ 1500 to ₹ 2000" value="₹ 1500 to ₹ 2000">
+                <label for="₹ 1500 to ₹ 2000">₹ 1500 to ₹ 2000</label><br>
+                <input type="radio" name="Cost" id="₹ 2000 +" value="₹ 2000 +">
+                <label for="₹ 2000 +">₹ 2000 +</label>
+            </div>
+            <div>
+                <h5>Sort</h5>
+                <input type="radio" name="Sort" id="Price low to high" value="Price low to high">
+                <label for="Price low to high">Price low to high</label><br>
+                <input type="radio" name="Sort" id="Price high to low" value="Price high to low">
+                <label for="Price high to low">Price high to low</label>
+            </div>
+        </div>
+        <!-- side bar end here -->
+
+        <!-- main bar start here -->
+        <div class="main-bar">
+            <div class="food_Item_1">
+                <div>
+                    <img src="breakfast.jpg" title="happy-meal" alt="Breakfast">
+                    <h2 class="bakery">The Big Chill Cakery</h2><br>
+                    <p class="bakery">FORT</p> <br>
+                    <p class="bakery">shop1, plot D, Samruddhi complex, Chincholi</p>
+                </div>
+                <hr/>
+                <div class="food_Item_1_part2">
+                  <p class="pre_text">
+                Cuisines:          Bakery <br><br>
+                Cost for two:      ₹ 700
+                  </p>
+                </div>
+            </div>
+
+            <div class="food_Item_2">
+                <div>
+                    <img  src="breakfast.jpg" title="happy-meal" alt="Breakfast">
+                    <h2 class="bakery">The Big Chill Cakery</h2><br>
+                    <p class="bakery">FORT</p><br>
+                    <p class="bakery">shop1, plot D, Samruddhi complex, Chincholi</p>
+                </div>
+                <hr/>
+                <div class="food_Item_2_par2"> 
+                  <p class="pre_text">
+                Cuisines:          Bakery <br><br>
+                Cost for two:      ₹ 700
+                 </p>
+                </div> 
+            </div>
+        </div>
+        <!-- main-bar ends here  -->
+    </div>
+</main>
+<!-- Here end main area -->
+
+<!-- footer start here -->
+<footer>
+    <div class="pagination">
+        <a href="#"><<</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">>></a>
+    </div>
+</footer>
+<!-- End footer tag -->
+</body>
+</html>
